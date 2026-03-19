@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleaprensentacao.css">
+ </head>
+ <body> 
+    <div  class="corpohtml">
+        <p>
+         &lt;!DOCTYPE html&gt; <br> 
+            &lt;html lang="en"&gt; <br>
+            &lt;head&gt; <br>
+                &lt;meta charset="UTF-8"&gt; <br>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                &lt;title&gt;Document&lt;/title&gt;<br>
+                &lt;link rel="stylesheet" href="styleaprensentacao.css"&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+        </p>
+    </div>
+
+    <div class="h1">
+        <p>
+            &lt;div class = "h1"&gt;<br>
+            &lt;h1&gt;RESPONSIVIDADE&lt;/h1&gt;<br>
+            &lt;div&gt;
+        </p>
+    </div>
+
+    <div class="mediaqueries">
+        &lt;div class = "mediaqueries"&gt;
+        <p>Media Queries</p>
+            <p>
+                As media queries são recursos do CSS que permitem aplicar estilos diferentes dependendo do tamanho da tela, resolução ou até orientação do dispositivo.
+                Em outras palavras: elas fazem seu site ficar responsivo, ou seja, bonito tanto no celular quanto no computador.
+            </p>
+        <p>Como funciona?</p>
+            <p>
+                Você define uma condição. Se ela for verdadeira, o CSS dentro dela é aplicado.
+                ex:
+                    @media(max-width: 1360px){
+	                    body{
+	                        background-color: cornFlowerBlue;
+                        }
+                    }
+            </p>
+        <p>Tipos mais usados</p>
+            <p>max-width</p>
+                <p>
+                    Usado para determinar até qual tamanho máximo da tela a função dentro do @media irá ser executada.
+                    ex.:
+                        @media (max-width: 600px) {
+                            body {
+                                background-color: black;
+                                }
+                            }
+                    /*O fundo da tela até 600px irá ficar preta*/
+                </p>
+            <p>min-width</p>
+                <p>
+                    Usado para determinar o tamanho mínimo que a função dentro do @media irá ser executada.
+                    ex.:
+                        @media (min-width: 600px) {
+                        body {
+                            background-color: black;
+                            }
+                        }
+                        /*O fundo da tela de no mínimo 600px irá ficar preta*/
+                </p>
+            <p>OBS</p>
+                <p>Também é possível alternar os dois, por exemplo:
+                    @media (min-width: 600px) and (max-width: 1360px) {
+                    body {
+                        background-color: black;
+                        }
+                    } 
+                </p>
+                &lt;div&gt; 
+    </div>
+
+    <div class="media">
+        <p>@media</p>
+            <p>
+                é a função que se usa no media queries
+                ex:
+                @media (min-width: 600px) {
+                    body {
+                        background-color: black;
+                        }
+                    }
+            </p>
+    </div>
+
+    <div class="breakpoints">
+        <p>Breakpoints</p>
+            <p>
+                Breakpoints são os pontos de largura da tela onde o layout “quebra” e precisa mudar.
+                /*São os valores que você usa nas media queries para adaptar o design.*/
+
+                Exemplo:
+
+                    @media (max-width: 600px) {
+                        .container {
+                            flex-direction: column;
+                        }
+                    }
+
+                /*O breakpoint é justamente o 600px, é onde os objetos do site iriam “quebrar” a tela, nesse caso os blocos do container iriam ficar em coluna, isso ajuda muito na mudança de telas grandes para telas pequenas*/
+            </p>
+    </div>
+
+    <div class="mobilefirst">
+        <h2>Mobile First</h2>
+            <p>Mobile-first
+                É uma forma de desenvolver o CSS onde se começa pelo celular e vai adaptando a telas maiores, justamente porque hoje a maioria dos acessos vem de celulares.
+            </p>
+    </div>
+
+    <div>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+    </div>
+ </body>
+ </html>
